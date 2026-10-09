@@ -26,11 +26,10 @@ try {
 await sequelize.authenticate();
 console.log("Connected to PostgreSQL!");
 
-```
 await sequelize.sync();
 
 console.log("Table Synchronized!");
-```
+
 
 } catch (error) {
 console.error("Connection failed", error);
