@@ -27,9 +27,7 @@ await sequelize.authenticate();
 console.log("Connected to PostgreSQL!");
 
 ```
-await sequelize.sync({
-  alter: process.env.NODE_ENV === "development",
-});
+await sequelize.sync();
 
 console.log("Table Synchronized!");
 ```
